@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 99vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+
+table {
+    width: 600px;
+    height: 600px;
+    border-collapse: collapse;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+tr {
+    margin: 0;
+    padding: 0; 
+}
+
+.up {
+    border-top: 1px solid black;
+}
+
+.right {
+    border-right: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.ur {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.ud {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black ;
+}
+
+.all {
+    border: 1px solid black;
+}

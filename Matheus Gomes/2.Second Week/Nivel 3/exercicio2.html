@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*Ler dois números (inicial e final). Escreva quantos número pares e quantos números impares encontram-
+        se entre os dois números fornecidos pelo usuário.
+        */
+
+        var valor1 = prompt(`Qual o menor valor?`);
+        var valor2 = prompt(`Qual o maior valor?`);
+        var dist = valor2 -  valor1;
+        var cont = 0;
+        var entre = 0;
+
+        do{
+            entre = valor2--;
+            modulo = entre % 2;
+
+            if(modulo == 0){
+                document.writeln(`O numero ${entre} é um numero par <br>`);
+            }
+            
+            else if(modulo == 1){
+                document.writeln(`O numero ${entre} é um numero impar <br>`);
+            }
+
+            cont++;
+        } while(cont <= dist);
+    </script>
+</body>
+</html>

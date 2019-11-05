@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para ler 10 números. Todos os números lidos com valor inferior a 40 devem ser somados. Escreva o valor final da soma efetuada. */
+
+        var entrada;
+        var soma = 0;
+        var media = 0;
+        var n = 0;
+
+        for(i = 1; i <= 10; i++){
+            entrada = Number(prompt(`Entre com valores`));
+            if(entrada < 40){
+                soma = soma + entrada;
+                n++;
+            }
+            if(i == 10){
+                media = soma/n;
+                alert(`A média é ${media}`);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

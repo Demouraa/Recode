@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*
+        Uma loja está levantando o valor total de todas as mercadorias em estoque. Escreva um algoritmo que permita
+        a entrada das seguintes informações: 
+        a) o número total de mercadorias no estoque; 
+        b) o valor de cada mercadoria.
+        Ao final mostrar o valor total em estoque e a média de valor das mercadorias.
+        */
+
+        var nGoods = Number(prompt(`Qual o numero de Mercadorias?`));
+        var iGoods = 0;
+
+        var i = 0;
+        var quo = 0;
+        var sum = 0;
+
+        do{
+            var iGoods =  Number(prompt(`Qual o valor do produto ${i+1}?`));
+            sum = sum + iGoods;
+            i++;
+            if(i == nGoods){
+                quo = sum / nGoods;
+                alert(`O preço total em mercadorias é de ${sum} e a média é de ${quo}`);
+            }
+        } while(i <= nGoods);
+    </script>
+</body>
+</html>

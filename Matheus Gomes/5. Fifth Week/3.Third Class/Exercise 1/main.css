@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #141418;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back {
+    position: relative;
+    margin: 0;
+    z-index: 0;
+    padding: 0;
+    background-image: url(imgs/classroom.jpg);
+    width: 100vw;
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.overlay {
+ background-color: rgb(0, 0, 255, 0.5);
+ height: 92vh;
+ width: 100vw;
+}
+
+.back h3 {
+    color: #e09d32;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.back p {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: violet;
+}

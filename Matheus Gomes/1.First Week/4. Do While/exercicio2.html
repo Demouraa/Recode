@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Do...While Exercicio 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Criar uma somatória infinita, onde o usuário digita um valor e a cada loop esse valor é acumulado em uma outra variável, o total deve ser mostrado a cada novo valor digitado em um alert, quando o usuário digitar “fim” o loop para de rodar e o script é finalizado.
+
+        var iUser = 0;
+        var sum = 0;
+        var keep = 1;
+
+        do{
+            iUser = Number(prompt(`Digite um numero para a somatoria ou fim para terminar o jogo`));
+            sum += iUser;
+            alert(`O total é de ${sum}`);
+            keep += sum;
+        } while( sum < keep);
+        
+    </script>
+</body>
+</html>

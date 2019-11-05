@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>While Loop Exercicio 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. 
+
+        let nota1 = Number(prompt(`Digite a primeira nota1`));
+        let nota2 = Number(prompt(`Digite a segunda nota2`));
+        let media = (nota1 + nota2) / 2;
+        
+        while(nota1 >= 0 && nota1 <= 10 && nota2 > 0 && nota2 <= 10){
+            document.writeln(`A média do aluno é ${media}`);
+            break;
+        }
+    </script>
+</body>
+</html>

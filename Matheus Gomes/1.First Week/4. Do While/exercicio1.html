@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio 1 Do...While</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Ler o número de alunos existentes em uma turma e, após isto, ler as notas destes alunos, calcular e escrever a média aritmética dessas notas lidas. 
+        var nAlunos = Number(prompt(`Quantos alunos Tem na turma?`));
+        var aluno = 1;
+
+        var nNotas = Number(prompt(`Quantas notas os alunos possuem`));
+        var i = 0;
+        var media = 0;
+        var soma = 0;
+    
+        do{
+            var nota = Number(prompt(`Qual a nota da Materia ${i+1} do aluno ${aluno}?`));
+            soma = soma + nota;
+            i++;
+            if(i == nNotas){
+                media = soma / nNotas;
+                alert(`A média do aluno ${aluno} é ${media}`);
+                var i = 0;
+                aluno++;
+                soma = 0;
+            }
+        }while(i <= nNotas && aluno <= nAlunos);
+
+    </script>
+</body>
+</html>

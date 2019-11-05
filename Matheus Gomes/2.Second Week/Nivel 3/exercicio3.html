@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive). */
+        var oValue = 15;
+        var nValue = 0;
+        var soma = 0;
+        var i = 0;
+        var result;
+        do{
+            result = oValue + nValue;
+            nValue = result;
+            console.log(`${oValue}`);
+
+            if(i == 85){
+                media = result/86;
+                alert(`A média é de ${media}`);
+            }
+            i++;
+            oValue++;
+        }while(i <= 85);
+    </script>
+</body>
+</html>

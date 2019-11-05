@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio 2 For loop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript" defer src='app2.js'></script>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
+        Acabei fazendo um algoritmo para imprimir os 10 primeiros numeros maiores doque qualquer valor digitado pelo usuario. */
+        var numero = prompt(`Digite o numero que quer descobrir 10 primeiros valores maiores q ele.`);
+        numero= Number(numero);
+        var maior = numero + 10;
+        
+        for(i = numero+1; i <= maior; i++){
+            document.writeln(`<p>${i}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio de Forms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Formulario de inscrições</h1>
+    <div class="container">
+        <form action="models.py" method="POST">
+            <div>
+                <p>Nome</p>
+                <input type="text" name="nome">
+            </div>
+
+            <div>
+                <p>Endereço</p>
+                <input type="text" name="endereco">
+            </div>
+
+            <div>
+                <p>Selecione o Curso Desejado</p>
+            </div>
+
+            <div>
+                <select name="curso">
+                    <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="BootStrap">Bootstrap</option>
+                        <option value="AngularJS">AngularJS</option>
+                        <option value="Python">Python</option>
+                </select>
+            </div>
+            
+            <div>
+                <p>Marque a Area da computação de seu interesse</p>
+                <div class="checkbox"> 
+                    <input type="checkbox" name="areaC" value="UX/UI"> <p>UX/UI</p> 
+                </div>
+                <div class="checkbox"> 
+                    <input type="checkbox" name="areaC" value="Desenvolvedores"> <p>Desenvolvedores</p> 
+                </div class="checkbox">
+                <div class="checkbox">
+                    <input type="checkbox" name="areaC" value="Banco de Dados"> <p>Banco de Dados</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="areaC" value="Rede de Computadores"> <p>Rede de Computadores</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="areaC" value="Big Data"> <p>Big Data</p>
+                </div>
+                <input type="submit" value="enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

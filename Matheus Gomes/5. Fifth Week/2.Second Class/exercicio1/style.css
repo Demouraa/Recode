@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    height: 100px;
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+    width: 200px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler uma quantidade de números. Depois de ler todos os números o algoritmo deve
+        apresentar na tela o maior dos números lidos e verificar se o mesmo é par ou impar.*/
+
+        var qNumbers = Number(prompt(`Digite a quantidade de numeros que quer ler`));
+        var i = 1;
+        var num;
+        var bNum = 0;
+
+        do{
+            num = Number(prompt(`Digite o numero ${i}`));
+            
+            if(bNum < num){
+                bNum = num;
+            }
+
+            if(i == qNumbers){
+                alert(`O maior numero é ${bNum}`);
+            }
+            i++;
+        } while(i <= qNumbers);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>While Loop Exercicio 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*1 - Escreva um algoritmo para ler 2 valores e se o segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido. */
+        let numerador = Number(prompt(`Digite o numerador`));
+        let denominador = Number(prompt(`Digite o denominador`));
+        let quociente = numerador/denominador;
+
+        while(denominador <= 0){
+            denominador = Number(prompt(`Digite o denominador novamente, ele deve ser um numero maior que zero!`));
+            console.log(`test`);
+
+            quociente = numerador/denominador;
+        }
+        while(denominador > 0){
+            document.writeln(`O resultado da divisão é: ${quociente}`);
+            break;
+        }
+    </script>
+</body>
+</html>

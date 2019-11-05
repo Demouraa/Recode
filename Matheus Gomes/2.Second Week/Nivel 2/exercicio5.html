@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        /*5 - Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão de 10% sobre o total das vendas, calcular e escrever o seu salário total. */
+
+        var salario = Number(prompt(`Qual o seu salário?`));
+        var vendas = Number(prompt(`Qual o valor das vendas desse mês?`));
+        var comissao = vendas * 0.1;
+        var total = comissao + salario
+
+        alert(`Este mês você recebera o total de ${total} reais.`);
+    </script>
+</body>
+</html>

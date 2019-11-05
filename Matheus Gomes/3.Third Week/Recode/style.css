@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    border: 5px solid blue;
+}
+
+header {
+    box-sizing: border-box;
+    height: 70px;
+    border-bottom: 5px solid blue;
+    display: flex;
+    align-items: center;
+}
+
+.custom p {
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+}
+
+.custom h2 {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.nome {
+    margin: auto;
+    font-size: 40px;
+    color: blue;
+}
+
+h2 {
+    margin: 0;
+    margin-left: 30px;
+}
+
+.custom {
+    color: blue;
+}
+
+.pro {
+    color: green;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
