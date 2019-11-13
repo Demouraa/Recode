@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 60vw;
+    height: 94vh;
+}
+
+.destaque {
+    border: 1px solid black;
+}
+
+p {
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.linhaMaior {
+    margin: 20px;
+}
+
+.coluna1 {
+    height: 3%;
+    background-color: teal;
+}
+
+.coluna {
+    height: 150px;
+    background-color: teal;
+}
+
+.colunaA {
+    height: 75px;
+    background-color: teal;
+}
