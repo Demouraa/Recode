@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Second Js exercise</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style2.css'>
+    <script defer type="text/javascript" src='script.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Conversor Cambial</h1>
+        </div>
+        <div>
+            <form id="myForm" action="" method="GET">
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="text" class="form-control" id="n1" placeholder="Digite o valor em real">
+                    </div>
+
+                    <div class="form-group col">
+                        <select class="form-control custom-select mr-sm-2" name="" id="convertion">
+                            <option value="none">Escolha uma moeda</option>
+                            <option value="dol">Dolar</option>
+                            <option value="eu">Euro</option>
+                            <option value="peso">Peso Argentino</option>
+                            <option value="iene">Iene</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col">
+                        <p id="result"></p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
