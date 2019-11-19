@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(photos/worker.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+body:after {
+    animation: grain 1s steps(10) infinite;
+    background-image: url(photos/background.jpg);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.6;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    z-index: 0;
+}
+
+/*
+@keyframes grain {
+    0%, 100% {transform: translate(0, 0); }
+    10% {transform: translate(-1%, -1%); }
+    20% {transform: translate(-15%, 5%); }
+    30% {transform: translate(-7%, -25%); }
+    40% {transform: translate(-5%, 25%); }
+    50% {transform: translate(-15%, 10%); }
+    60% {transform: translate(15%, 0); }
+    70% {transform: translate(0, 15%); }
+    80% {transform: translate(3%, 35%); }
+    90% {transform: translate(-10%, 0); }
+}
+*/
+
+.content {
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    color: #e3e3e3 !important;
+    font-family: "playfair Display" !important;
+    margin: 32px 0 32px 40px !important;
+}
+
+.row {
+    z-index: 1;
+    width: 95%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cardd {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    height: 220px;
+    -webkit-transition: 1s !important;
+}
+
+.row h5 {
+    color: #382119;
+    font-family: "Poppins";
+    margin: 48px 0 2px 4px;
+    font-size: 30px;
+}
+
+.row h5:before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: -2px;
+    width: 3px;
+    height: 22px;
+    display: block;
+    background: #fff;
+}
+
+p {
+    color: black;
+    margin-left: 4px;
+    font-size: 20px;
+    margin-bottom: 30px !important;
+}
+
+a {
+    margin-left: 4px;
+    color: #052955 !important;
+    font-family: Poppings;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
+.cardd:hover:before {
+    -webkit-transition: 1s !important;
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 285px;
+    height: 280px;
+    z-index: -1;
+    animation: anim 4s ease-in-out;
+}
+
+.card1.cardd:hover::before {
+    background: url(photos/barber-sm.jpg);
+    background-size: cover;
+}
+
+.card2.cardd:hover::before {
+    background: url(photos/barber-sm.jpg);
+    background-size: cover;
+}
+
+.card3.cardd:hover::before {
+    background: url(photos/manicure-sm.jpg);
+    background-size: cover;
+}
+
+.card4.cardd:hover::before {
+    background: url(photos/manicure-sm.jpg);
+    background-size: cover;
+}
+
+/* UPDATE THIS IN THE FUTURE
+.card5.cardd:hover::before {
+    background: url(photos/manicure-sm.jpg);
+    background-size: cover;
+}
+
+.card6.cardd:hover::before {
+    background: url(photos/manicure-sm.jpg);
+    background-size: cover;
+}
+
+.card7.cardd:hover::before {
+    background: url(photos/barber-sm.jpg);
+    background-size: cover;
+}
+
+.card8.cardd:hover::before {
+    background: url(photos/barber-sm.jpg);
+    background-size: cover;
+} */
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        left: 70px;
+    }
+
+    20% {
+        opacity: 1;
+        left: 100px;
+    }
+
+    100% {
+        opacity: 100px;
+    }
+}
+
+
+@media only screen and(max-width: 900px) {
+    a {
+        display: none;
+    }
+
+    .cardd {
+        height: 100px;
+    }
+
+    .row h5 {
+        margin: 28px 0 2px 4px;
+    }
+
+    .row p {
+        margin-bottom: 10px !important;
+    }
+
+    .row h5::before {
+        top: 26px;
+    }
+
+    .cardd:hover::before {
+        display: none;
+    }
+}
