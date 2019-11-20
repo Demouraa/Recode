@@ -1,23 +1,18 @@
-
-let iAuthor  = document.getElementById("author").value;
-let iTitle  = document.getElementById("title").value;
-let iEdition  = document.getElementById("edition").value;
-let iSite  = document.getElementById("site").value;
-let pName  = document.getElementById("pname").value;
-let yPublication  = document.getElementById("author").value;
-
 let form = document.getElementById("myForm");
-let fAuthor;
-let format;
 
-function outside(e) {
+function forma(e) {
     e.preventDefault();
-    
-    var fAuthor = iAuthor.split(" ");
-    iAuthor = fAuthor[1].toUpperCase() + "," + " " + fAuthor[0][0] + ".";
-    format = `${iAuthor} ${iTitle}: ${iEdition}, ed. ${iSite}: ${pName}, ${yPublication}`;
-    document.getElementById("format").innerHTML = format;
 
+    let iAuthor = document.getElementById("author").value;
+    let iTitle = document.getElementById("title").value;
+    let iEdition = document.getElementById("edition").value;
+    let iSite = document.getElementById("site").value;
+    let pName = document.getElementById("pname").value;
+    let yPublication = document.getElementById("ypublication").value;
+
+    let fAuthor = iAuthor.split(" ");
+    let format = `${fAuthor[1].toUpperCase()}, ${fAuthor[0][0]}. ${iTitle}: ${iEdition}, ed. ${iSite}: ${pName}, ${yPublication}`;
+    document.getElementById("format").innerHTML = format;
     //iTitle = iTitle.split(" ");
     //    for(i = 0; i <= iTitle.length; i++){
     //}
@@ -31,10 +26,8 @@ function outside(e) {
     console.log(iSite);
     console.log(pName);
     console.log(yPublication);
+    console.log(fAuthor);
+    console.log(format);
+};
 
-    //document.writeln(fAuthor);
-
-
-}
-
-form.addEventListener("submit", outside);
+form.addEventListener("submit", forma);

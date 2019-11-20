@@ -16,9 +16,12 @@ function counter(e) {
             document.getElementById("avg").innerHTML = `A media dos alunos é ${average}`
             document.getElementById("count").innerHTML = `Todas as ${count} notas foram contabilizadas`;
             for(i = 0; i < stdGrades.length; i++){
-                if(stdGrades[i] >= average){
+                if(stdGrades[i] > average){
                     aboveAverage++;
                     document.getElementById("aboveAverage").innerHTML = `${aboveAverage} estudantes tiveram a nota acima da média`;
+                }
+                if(i === 0){
+                    document.getElementById("aboveAverage").innerHTML = "Nenhum estudante teve a nota acima da média!"
                 }
             }
         }
