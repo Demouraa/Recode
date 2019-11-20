@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Formulario</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="number/css" media="screen" href="main.css" />
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"/>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="container">
-        <h1>Formulario</h1>
-      <form method="post" id="myForm" name="" method="POST" action="">
-        <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-3">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
-          <div class="form-group">
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </form>
-      <p id="format"></p>
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Formulario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="number/css" media="screen" href="main.css" />
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulario</h1>
+    <form method="post" id="formA" name="" method="POST" action="">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Exponenciação</label>
+        <input type="text" class="form-control" id="numA1" aria-describedby="emailHelp" placeholder="Digite o Primeiro Numero" />
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="numA2" aria-describedby="emailHelp" placeholder="Digite o Segundo Numero" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="formatA">Resultado: </p>
+    </form>
+
+    <form method="post" id="formB" name="" method="POST" action="">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Raiz Quadrada</label>
+        <input type="text" class="form-control" id="numB" aria-describedby="emailHelp" placeholder="Digite um Numero" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="formatB">Resultado: </p>
+    </form>
+
+    <form method="post" id="formC" name="" method="POST" action="">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Arredondamento Para Baixo</label>
+        <input type="text" class="form-control" id="numC" aria-describedby="emailHelp" placeholder="Digite um Numero" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="formatC">Resultado: </p>
+    </form>
+
+    <form method="post" id="formD" name="" method="POST" action="">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Arredondamento Para Cima</label>
+        <input type="text" class="form-control" id="numD" aria-describedby="emailHelp" placeholder="Digite um Numero" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="formatD">Resultado: </p>
+    </form>
+
+    <form method="post" id="formE" name="" method="POST" action="">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Multiplique por Pi</label>
+        <input type="text" class="form-control" id="numE" aria-describedby="emailHelp" placeholder="Digite um Numero" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="formatE">Resultado: </p>
+    </form>
+  </div>
+  </div>
+</body>
+
 </html>
