@@ -245,6 +245,11 @@ footer {
     margin-right: 5px;
 }
 
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
 .social:hover{
     background-color: #fff;
 }
